@@ -1,5 +1,5 @@
 with import <nixpkgs> {};
 stdenv.mkDerivation {
   name = "dwmstatus";
-  buildInputs = [ xlibsWrapper ];
+  buildInputs = [ xorg.libX11 ];
 }
